@@ -40,3 +40,12 @@ body {
   text-align: center;
   color: #1b1a20;
 }
+#one:hover{
+  background-color: white;
+  cursor: pointer;
+}
+#one:active{
+  width: 29vw;
+  min-width: 190px;
+  max-width: 240px;
+}

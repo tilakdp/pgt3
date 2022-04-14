@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="gridContainer">
-      <div class="grid" id="one">
+      <div class="grid" id="one" onlick="javascript:location.href=addguest.php">
         <img src="img/add-user.png" alt="">
         <p>Add Guest</p>
       </div>

@@ -1,11 +1,11 @@
 <?php
-  include('../4f085244b01893378463e0688654fd7d99038aff8a4946ab62b8c177f35ce3dd/config.php');
+  include('../4f085244b01893378463e0688654fd7d99038aff8a4946ab62b8c177f35ce3dd/pgconfig.php');
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_start();
     $username = htmlspecialchars($_POST['uname']);
     $password = htmlspecialchars($_POST['passw']);
-    $db = mysqli_connect(db_server, db_username, db_password, db_database);
+    $db = mysqli_connect(db_server, db_pguser, db_pgpass, db_pgdb);
     if($db){
       echo "connection successful\r\n";
       $query = "SELECT uname, grp FROM usersKrushika WHERE uname = '".$username."' and passw = '".hash('sha256', $password)."'";
