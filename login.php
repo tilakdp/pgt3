@@ -22,14 +22,6 @@
     }else{
       echo "connection failed because : ".mysqli_connect_error();
     }
-    // if(password_verify($username, '$2y$10$u5L2nJ.EfyxW0fJ/xOuH8e97gW4aICOPQgZBZswRNMnpcTSGQ7nUm') && password_verify($password, '$2y$10$8wA.H27d2tSwL0BQ3nK4YOOEj.3zd99AGm9aAvOGOIKB9wXIMs6GO')){
-    //   echo "username and password match aitu!";
-    //   echo "\n";
-    //   $_SESSION['logged_in'] = $username;
-    //   header("location:dash.php");
-    // }else {
-    //   echo "\nauthenticate aglilla maga!";
-    // }
   }
 ?>
 
@@ -51,8 +43,5 @@
         <input type="submit" name="submit" value="submit" id="submit" class="formElements">
       </form>
     </div>
-    <script type="text/javascript">
-      // setInterval(function(){location.reload()}, 3000);
-    </script>
   </body>
 </html>
