@@ -5,15 +5,13 @@
     session_start();
     $username = htmlspecialchars($_POST['uname']);
     $password = htmlspecialchars($_POST['passw']);
-    // $db = mysqli_connect('localhost', 'logintool', 'norg2021', 'krushika');
     $db = mysqli_connect(db_server, db_username, db_password, db_database);
     if($db){
       echo "connection successful\r\n";
       $query = "SELECT uname, grp FROM usersKrushika WHERE uname = '".$username."' and passw = '".hash('sha256', $password)."'";
-      // echo "query idu : ".$query."\n";
       $result = mysqli_query($db, $query);
       $row = mysqli_fetch_assoc($result);
-      if(mysqli_num_rows($result) > 0){
+      if(mysqli_num_rows($result) > 0 && $row["uname"] == $username){
         $_SESSION['user'] = $row["uname"];
         $_SESSION['userCat'] = $row["grp"];
         echo "the user identified as : ".$row["uname"];
