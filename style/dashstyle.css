@@ -1,0 +1,42 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1b1a20;
+  color: white;
+}
+.gridContainer{
+  position: relative;
+  width: 50vw;
+  min-height: 200px;
+  max-width: 300px;
+  left: 50vw;
+  transform: translateX(-50%);
+  padding-bottom: 3vw;
+}
+.grid{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4vw;
+  width: 30vw;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: wheat;
+  border-radius: 20px;
+}
+.grid img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vw;
+  max-width: 150px;
+  text-align: center;
+}
+.grid p{
+  font-size: 3em;
+  text-align: center;
+  color: #1b1a20;
+}

@@ -1,0 +1,6 @@
+.sessionStatus{
+  position: absolute;
+  display: flex;
+  left: 100vw;
+  transform: translateX(-150%);
+}
