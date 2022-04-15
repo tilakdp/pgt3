@@ -7,6 +7,7 @@
     $password = htmlspecialchars($_POST['passw']);
     echo "input uname : ".$username;
     echo "input passw : ".$password;
+    echo "pass hash : ".hash('sha256', $password;)
     $db = mysqli_connect(db_server, db_pguser, db_pgpass, db_pgdb);
     if($db){
       echo "connection successful\r\n";
