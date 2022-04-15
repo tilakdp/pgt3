@@ -14,6 +14,8 @@
       $query = "SELECT uname, grp FROM usersKrushika WHERE uname = '".$username."' and passw = '".hash('sha256', $password)."'";
       $result = mysqli_query($db, $query);
       $row = mysqli_fetch_assoc($result);
+      echo "username received : ".$row['uname'];
+      echo "grp : ".$row['grp'];
       if(mysqli_num_rows($result) > 0 && $row["uname"] == $username){
         $_SESSION['user'] = $row["uname"];
         $_SESSION['userCat'] = $row["grp"];
@@ -21,8 +23,6 @@
         header('location:dash.php');
       }else{
         echo "enu result barlilla";
-        echo "username received : ".$row['uname'];
-        echo "grp : ".$row['grp'];
       }
     }else{
       echo "connection failed because : ".mysqli_connect_error();
