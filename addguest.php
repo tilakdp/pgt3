@@ -1,3 +1,6 @@
+<?php
+    include('session.php');
+?>
 <html>
     <head>
         <title>add occupant</title>
