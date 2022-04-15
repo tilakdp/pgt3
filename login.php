@@ -18,6 +18,8 @@
         header('location:dash.php');
       }else{
         echo "enu result barlilla";
+        echo "username received : ".$row['uname'];
+        echo "grp : ".$row['grp'];
       }
     }else{
       echo "connection failed because : ".mysqli_connect_error();
