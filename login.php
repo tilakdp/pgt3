@@ -1,5 +1,5 @@
 <?php
-  include('../../4f085244b01893378463e0688654fd7d99038aff8a4946ab62b8c177f35ce3dd/pgconfig.php');
+  include('../../4f085244b01893/pgconfig.php');
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_start();
