@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if($_SESSION['user']){
+  if(isset($_SESSION['user'])){
     echo '<div class="sessionStatus"><?php echo "logged in as : ".$_SESSION["user"]; ?></div>';
   }else {
     echo '<div class="sessionStatus">sorry you are not logged in</div>';
