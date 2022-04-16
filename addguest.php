@@ -11,6 +11,7 @@
             <input type="text" name="Full Name">
             <input type="text" name="Nick">
             <input type="date" name="doj">
+            <input type=""
         </form>
     </div>
 </body>
